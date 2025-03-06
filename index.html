@@ -211,7 +211,22 @@
                 font-size: 28px;
             }
         }
+        
+        .lang-btn {
+            background: none;
+            border: none;
+            color: #333;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 5px 10px;
+            transition: color 0.3s;
+        }
+        
+        .lang-btn:hover {
+            color: #007bff;
+        }
     </style>
+    <script src="js/i18n.js"></script>
 </head>
 <body>
     <header>
@@ -219,6 +234,8 @@
             <nav>
                 <a href="#" class="logo">我的个人网站</a>
                 <ul class="nav-links">
+                    <li><button onclick="switchLanguage('zh')" class="lang-btn">中文</button></li>
+                    <li><button onclick="switchLanguage('en')" class="lang-btn">English</button></li>
                     <li><a href="#research" class="nav-link">科研</a></li>
                     <li><a href="#internship" class="nav-link">实习</a></li>
                     <li><a href="#education" class="nav-link">学校教育</a></li>
